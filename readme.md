@@ -14,6 +14,24 @@ it often looks like this
 GIT is only used to add data it is hard to get the system to do anything that is undoable or erase data but genuinely safe once you commit all your changes.
 # MAIN STATES :
 ```mermaid
+flowchart LR
+%% Colors %%
+classDef blue fill:blue,stroke:blue,stroke-width:5px,color:grey
+
+classDef blue fill:blue,stroke:blue,stroke-width:5px,color:grey
+
+classDef grey fill:grey,stroke:grey,stroke-width:5px,color:black
+
+%% link 0 %%
+WK(Working Directory)  ===> |Project Checkout|GD(.git directory/Repo):::blue
+
+%% link 1 %% 
+WK ===> |Stage Fixes|SA(Stating Area):::blue
+
+%% link 2 %%
+SA ===> |Commit|GD:::grey
+
+%% Styling %%
 
 ``` 
 
