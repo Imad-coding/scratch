@@ -16,14 +16,14 @@ GIT is only used to add data it is hard to get the system to do anything that is
 ```mermaid
 flowchart LR
 %% Colors %%
-classDef blue fill:blue,stroke:blue,stroke-width:5px,color:grey
+classDef red fill:red,stroke:red,stroke-width:20px,color:grey
 
-classDef blue fill:blue,stroke:blue,stroke-width:5px,color:grey
+classDef blue fill:blue,stroke:blue,stroke-width:30px,color:grey
 
-classDef grey fill:grey,stroke:grey,stroke-width:5px,color:black
+classDef grey fill:grey,stroke:grey,stroke-width:15px,color:black
 
 %% link 0 %%
-WK(Working Directory)  ===> |Project Checkout|GD(.git directory/Repo):::blue
+WK(Working Directory):::red  ===> |Project Checkout|GD(.git directory/Repo)
 
 %% link 1 %% 
 WK ===> |Stage Fixes|SA(Stating Area):::blue
@@ -32,7 +32,7 @@ WK ===> |Stage Fixes|SA(Stating Area):::blue
 SA ===> |Commit|GD:::grey
 
 %% Styling %%
-
+linkStyle 0,1,2 stroke:grey
 ``` 
 
 
