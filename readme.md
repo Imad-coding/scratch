@@ -82,10 +82,20 @@ git log --all
 ```
 for the desired branch, same command but type your branch's name instead of the --all decorator.  
 
-before pushing the brand new branch you need an upstream or remote branch by tying this command you're all set.
+before pushing the brand new branch you need an upstream or a remote branch by typing this command you're all set.
 
 ```bash
 git push -u origin HEAD
+```
+## Merging Files :
+- all you need is to switch back to your main branch as we covered earlier using git checkout then running this command to merge your branch that you've created and all the work that you've staged and committed before
+```bash
+git checkout main
+git merge createdbranch
+```
+after that you can simply delete the new one since now they're both pointing at the **HEAD** pointer
+```bash
+git branch -d createdbranch
 ```
 
 
