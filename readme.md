@@ -101,7 +101,10 @@ Finally push that work and don't forget you dumbass
 ```bash
 git push origin main
 ``` 
-
+To clear up things definitevely on github try this :
+```bash
+git push origin --delete createdbranch
+```
 
 
 
