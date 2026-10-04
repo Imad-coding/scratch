@@ -33,6 +33,39 @@ SA ===> |Commit|GD:::grey
 
 %% Styling %%
 linkStyle 0,1,2 stroke:grey
-``` 
+```
+# Crucial steps :
+#### **Creating a GIT Repo :**
+- method 1 : take a local directory that is currently under version control then turn it into a GIT repo.
+- method 2 : clone an existing GIT repo on your local machine.
+#### **Initializing a Repo in an Existing Directory :**
+```bash
+$ cd C:/Users/user/my_project
+```
+then type
+```bash
+$ git init
+```
+
+#### **Staging Files :**
+```bash
+git add .
+```
+
+#### **Committing Files :**
+```bash
+git commit -m "your message"
+```
+
+#### **Pushing Files :**
+```bash
+git push
+```
+
+#### **Ignoring Files :**
+```bash
+$ cat .gitignore
+```
+
 
 
