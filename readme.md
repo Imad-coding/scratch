@@ -97,7 +97,10 @@ after that you can simply delete the new one since now they're both pointing at 
 ```bash
 git branch -d createdbranch
 ```
-
+Finally push that work and don't forget you dumbass
+```bash
+git push origin main
+``` 
 
 
 
