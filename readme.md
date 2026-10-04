@@ -66,7 +66,23 @@ git push
 ```bash
 $ cat .gitignore
 ```
-Teeeeeeeest brooooo
+# GIT Branching Basics :
+to create a branch you run this command
+```bash
+git branch "name of your branch wihtout quotes"
+```
+### Important Clarification ! :
+- When creating a new branch you're still on your main one with the help of a pointer called Head, so in order to switch the header and work on your desired branch you should use this command below
+```bash
+git checkout "your branch"s name without quotes"
+```
+to show all your commit histroy run this command
+```bash
+git log --all
+```
+for the desired branch, same command but type your branch's name instead of the ---all decorator
+
+
 
 
 
