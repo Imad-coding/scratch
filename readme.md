@@ -80,8 +80,14 @@ to show all your commit histroy run this command
 ```bash
 git log --all
 ```
-for the desired branch, same command but type your branch's name instead of the --all decorator
-testing purposes brooooo
+for the desired branch, same command but type your branch's name instead of the --all decorator.  
+
+before pushing the brand new branch you need an upstream or remote branch by tying this command you're all set.
+
+```bash
+git push -u origin HEAD
+```
+
 
 
 
