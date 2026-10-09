@@ -35,5 +35,30 @@ except FileNotFoundError as e:
     print("Problem:", e)
 ```
 
+### else vs finally :
+else runs only if the try succeeded.  
+
+finally runs not matter what, useful for closing a file or a database connection.
+```python
+try:
+    f = open("data.txt")
+except FileNotFoundError:
+    print("No file")
+else:
+    print("File opened fine")   # runs ONLY if no exception happened
+finally:
+    print("Always runs")        # runs no matter what
+```
+## Key Terms:
+- Exception : An error tha happens when the program runs.
+
+- Raise : trigger an exception.
+
+- Handle/catch : to deal a crash with try/except.
+
+- Traceback : the pritned trail showing where the error occured.
+
+- Propagate : when an excpetion isn't caught, it travels up to the caller and eventually crashes the program.
+
 
 
